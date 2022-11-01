@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0B07BA2911B57500A5FB58 /* BrawlerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B07B92911B57500A5FB58 /* BrawlerListItemView.swift */; };
 		8C4D2EAA2909D2760007DAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D2EA92909D2760007DAAC /* AppDelegate.swift */; };
 		8C4D2EAC2909D2760007DAAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D2EAB2909D2760007DAAC /* SceneDelegate.swift */; };
 		8C4D2EAE2909D2760007DAAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D2EAD2909D2760007DAAC /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		D9875905871C8C4A8ADDB733 /* BrawlStarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98237C037ADF4C9AAA90AC3 /* BrawlStarsApi.swift */; };
 		D9887D0E4C4FBFF879294CBD /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984A00D639EE5CB74D61AC1 /* Accessory.swift */; };
 		D98942482A70104F5DC4AC31 /* BrawlerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98257FCD6B57008C7CBAB69 /* BrawlerListInteractor.swift */; };
+		D98A2ED67C0B57880FA3F8E8 /* BrawlerListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EBB0EEC345CF4CFA4C004 /* BrawlerListContentView.swift */; };
 		D98C4BD39798A5B1FF9A41E6 /* StarPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986C939475425D9C34DDC5B /* StarPower.swift */; };
 		D98D1E76B4129A592E94ACAA /* BrawlerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980060CCFE95C695117187D /* BrawlerListViewController.swift */; };
 		D98E4397DE8CC0F986E47ED8 /* BrawlerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9848A644D89B009D189A922 /* BrawlerList.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C0B07B92911B57500A5FB58 /* BrawlerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerListItemView.swift; sourceTree = "<group>"; };
 		8C4D2EA62909D2760007DAAC /* Brawl Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brawl Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4D2EA92909D2760007DAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4D2EAB2909D2760007DAAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		D984A00D639EE5CB74D61AC1 /* Accessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
 		D986C939475425D9C34DDC5B /* StarPower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarPower.swift; sourceTree = "<group>"; };
 		D98B7563BAF653ECD9D9CC71 /* Brawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brawler.swift; sourceTree = "<group>"; };
+		D98EBB0EEC345CF4CFA4C004 /* BrawlerListContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrawlerListContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 			children = (
 				D98257FCD6B57008C7CBAB69 /* BrawlerListInteractor.swift */,
 				D980060CCFE95C695117187D /* BrawlerListViewController.swift */,
+				D98EBB0EEC345CF4CFA4C004 /* BrawlerListContentView.swift */,
+				8C0B07B92911B57500A5FB58 /* BrawlerListItemView.swift */,
 			);
 			path = BrawlerList;
 			sourceTree = "<group>";
@@ -344,11 +350,13 @@
 				8C5EAA7C29106E4B00661102 /* UIView+ConstraintsExt.swift in Sources */,
 				D9826476BB8D6DF7A51B1DC0 /* Brawler.swift in Sources */,
 				D9875905871C8C4A8ADDB733 /* BrawlStarsApi.swift in Sources */,
+				8C0B07BA2911B57500A5FB58 /* BrawlerListItemView.swift in Sources */,
 				D98E4397DE8CC0F986E47ED8 /* BrawlerList.swift in Sources */,
 				D9887D0E4C4FBFF879294CBD /* Accessory.swift in Sources */,
 				D98C4BD39798A5B1FF9A41E6 /* StarPower.swift in Sources */,
 				D98942482A70104F5DC4AC31 /* BrawlerListInteractor.swift in Sources */,
 				D98D1E76B4129A592E94ACAA /* BrawlerListViewController.swift in Sources */,
+				D98A2ED67C0B57880FA3F8E8 /* BrawlerListContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

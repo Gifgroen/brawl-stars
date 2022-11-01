@@ -10,3 +10,7 @@ struct Brawler: Codable {
     let gadgets: [Accessory]
     let starPowers: [StarPower]
 }
+
+extension Brawler: Identifiable {
+
+}

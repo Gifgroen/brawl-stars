@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class BrawlerListViewController: UIViewController {
 
@@ -13,10 +14,12 @@ class BrawlerListViewController: UIViewController {
         self.view.backgroundColor = .red
 
         Task {
-            let brawlers = await interactor.get()
-            for b in brawlers.items {
-                print("Brawler: \(b.name)")
-            }
+            let response = await self.interactor.get()
+            let rootView = BrawlerListContentView(items: response.items)
+
+            let contentView = UIHostingController(rootView: rootView)
+            self.embed(child: contentView)
+            contentView.view.constrain(to: self.view)
         }
     }
 }
