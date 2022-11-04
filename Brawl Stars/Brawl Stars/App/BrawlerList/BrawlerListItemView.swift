@@ -12,15 +12,29 @@ struct BrawlerListItemView: View {
     @State var name: String
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("\(self.id)")
-            Text(self.name)
+        HStack {
+            if #available(iOS 15.0, *) {
+                let url = URL(string: "http://gifgroen.local:8000/portraits/\(id).png")
+                AsyncImage(url: url) { image in
+                    image.resizable()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 150, height: 150)
+            } else {
+                // Fallback on earlier versions
+            }
+
+            VStack(alignment: .leading) {
+                Text("\(self.id)")
+                Text(self.name)
+            }
         }
     }
 }
 
 struct BrawlerListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BrawlerListItemView(id: 1337, name: "Jessy")
+        BrawlerListItemView(id: 16000000, name: "Shelly")
     }
 }
